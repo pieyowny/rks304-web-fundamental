@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Tailwind</title>
+    <!-- Memuat Tailwind CSS melalui CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Font kustom untuk mendekati font tebal (heading) pada gambar */
+        .font-heading {
+            font-family: Impact, 'Arial Black', sans-serif;
+            letter-spacing: 0.05em;
+        }
+        
+        .font-body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body class="bg-white min-h-screen flex flex-col m-0 p-0">
+
+    <!-- Header / Navbar Top -->
+    <header class="bg-[#3e5af0] text-white py-5 px-10 flex justify-between items-center">
+        <h1 class="text-3xl font-heading tracking-wide">belajartailwind.com</h1>
+        
+        <!-- Tombol Login -->
+        <a  href="#" class="px-6 py-2 bg-[#273a9e] text-white rounded font-bold hover:bg-[#1c2a75] transition duration-300">
+            Logout
+        </a>
+    </header>
+
+    <!-- Kontainer Utama -->
+    <div class="flex flex-1">
+        
+        <!-- Sidebar -->
+        <aside class="w-1/3 max-w-[320px] pt-12 px-8 border-r border-gray-400">
+            <nav class="flex flex-col space-y-3">
+                <!-- Menu Aktif (Dashboard) -->
+                <a href="#" class="bg-[#3e5af0] text-white py-4 px-6 text-xl">
+                    Dashboard
+                </a>
+                
+                <!-- Menu Tidak Aktif -->
+                <a href="#" class="bg-gray-50 text-black py-4 px-6 text-xl hover:bg-gray-200 transition">
+                    Analytics
+                </a>
+                
+                <a href="#" class="bg-gray-50 text-black py-4 px-6 text-xl hover:bg-gray-200 transition">
+                    Pengguna
+                </a>
+                
+                <a href="#" class="bg-gray-50 text-black py-4 px-6 text-xl hover:bg-gray-200 transition">
+                    Laporan
+                </a>
+
+                <a href="#" class="bg-gray-50 text-black py-4 px-6 text-xl hover:bg-gray-200 transition">
+                    Pengaturan
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Konten Utama -->
+        <main class="flex-1 py-12 px-10">
+            <!-- Bagian Ringkasan Sistem -->
+            <section class="mb-14">
+                <h2 class="text-[2.75rem] font-sans font-black tracking-normal mb-4 text-black leading-none">Ringkasan Sistem</h2>
+                <p class="font-body text-gray-800 text-lg leading-relaxed w-full">
+                    Selamat datang di panel administrasi belajartailwind.com. Halaman ini menggunakan arsitektur CSS Grid penuh dengan rasio lebar 20:80 untuk navigasi dan area kerja utama.
+                </p>
+            </section>
+
+            <!-- Bagian Aktivitas Terbaru -->
+            <section class="ml-8">
+                <h3 class="text-3xl font-sans font-black tracking-normal mb-3 text-black leading-none">Aktivitas Terbaru</h3>
+                <p class="font-body text-gray-800 text-lg leading-relaxed w-full">
+                    Konsonan langit yang akan menjadi sebuah takdir cinta kita, menjadikan hamparan bahwa saksi ini, detik ini, secara sinaran ultrafeng yang mulai dinaungi oleh greenday akan menjadi cranberries cinta kita menjadi nyata. Aku sudah mempersembahkan terjun dari helikopter untuk kamu, sayang.
+                </p>
+            </section>
+        </main>
+
+    </div>
+
+</body>
+</html>

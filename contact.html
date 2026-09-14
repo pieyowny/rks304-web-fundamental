@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Hubungi Saya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 style="text-align: center; margin-bottom: 2rem;">Kontak</h1>
+        
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" id="nama" name="nama" required placeholder="Masukkan nama Anda ya sobat">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Alamat Email</label>
+                <input type="email" id="email" name="email" required placeholder="emailsobat@contoh.com">
+            </div>
+
+            <div class="form-group">
+                <label for="kategori">Kategori / Keperluan</label>
+                <select id="kategori" name="kategori" required>
+                    <option value="" disabled selected>-- Pilih Keperluan --</option>
+                    <option value="konsultasi">Konsultasi Keamanan Siber</option>
+                    <option value="kolaborasi">Kolaborasi Proyek</option>
+                    <option value="pertanyaan">Pertanyaan Umum / FAQ </option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="pesan">Pesan</label>
+                <textarea id="pesan" name="pesan" rows="5" required placeholder="Tulis pesan Anda di sini..."></textarea>
+            </div>
+
+            <button type="submit">Kirim Pesan</button>
+        </form>
+    </main>
+</body>
+</html>
