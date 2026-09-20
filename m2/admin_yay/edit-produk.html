@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Produk</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        evergreen: '#002A22',
+                        blush: '#F5B0CB',
+                        ash: '#9BC1BC',
+                        taupe: '#5D576B',
+                        deeppink: '#FF579F'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-100 flex h-screen overflow-hidden">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-evergreen text-white flex flex-col">
+        <div class="p-4 text-2xl font-bold border-b border-taupe text-blush flex items-center space-x-2">
+            <!-- Logo SVG Placeholder -->
+            <svg class="w-8 h-8 text-blush" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+            <span>DigiMarket</span>
+        </div>
+        <nav class="flex-1 p-4 space-y-2">
+            <a href="dashboard.html" class="block p-2 rounded hover:bg-taupe transition">Dashboard</a>
+            <a href="products.html" class="block p-2 rounded hover:bg-taupe transition">Products</a>
+            <a href="#" class="block p-2 rounded hover:bg-taupe transition">Users</a>
+            <a href="#" class="block p-2 rounded hover:bg-taupe transition">Setting</a>
+        </nav>
+        <div class="p-4 border-t border-taupe">
+            <a href="index.html" class="block p-2 text-center bg-deeppink rounded hover:bg-blush hover:text-evergreen font-bold transition">Logout</a>
+        </div>
+    </aside>
+    
+    <!-- Main Wrapper -->
+    <div class="flex-1 flex flex-col">
+        <!-- Header -->
+        <header class="bg-white shadow p-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-evergreen">Edit Product</h1>
+            <span class="text-taupe font-semibold">Welcome, Admin</span>
+        </header>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-6 overflow-y-auto bg-gray-50">
+            <div class="max-w-2xl bg-white p-8 rounded shadow-md border-t-4 border-ash">
+                <h2 class="text-2xl font-bold text-evergreen mb-6">Edit Produk</h2>
+                <form action="products.html">
+                    <div class="mb-5">
+                        <label class="block text-taupe font-semibold mb-2">Name</label>
+                        <input type="text" value="Nature Brush Set (.tpl)" class="w-full p-3 border border-ash rounded focus:outline-none focus:ring-2 focus:ring-deeppink" required>
+                    </div>
+                    <div class="mb-5">
+                        <label class="block text-taupe font-semibold mb-2">Stock</label>
+                        <input type="number" value="999" class="w-full p-3 border border-ash rounded focus:outline-none focus:ring-2 focus:ring-deeppink" required>
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-taupe font-semibold mb-2">Description</label>
+                        <textarea class="w-full p-3 border border-ash rounded focus:outline-none focus:ring-2 focus:ring-deeppink" rows="5" required>Set brush komprehensif untuk ilustrasi karakter, dilengkapi dengan setting dinamis untuk lineart dan painting. Cocok untuk environment maupun character design.</textarea>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <button type="submit" class="bg-evergreen text-white font-bold py-2 px-6 rounded hover:bg-deeppink transition">Save Changes</button>
+                        <a href="products.html" class="text-taupe hover:underline">Cancel</a>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer class="bg-white p-4 text-center text-sm text-taupe border-t shadow-inner">
+            &copy; 2026 DigiMarket Admin Panel.
+        </footer>
+    </div>
+</body>
+</html>

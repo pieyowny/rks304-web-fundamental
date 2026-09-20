@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starter Template</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        evergreen: '#002A22',
+                        blush: '#F5B0CB',
+                        ash: '#9BC1BC',
+                        taupe: '#5D576B',
+                        deeppink: '#FF579F'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-100 flex h-screen overflow-hidden">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-evergreen text-white flex flex-col">
+        <div class="p-4 text-2xl font-bold border-b border-taupe text-blush flex items-center space-x-2">
+            <!-- Logo SVG Placeholder -->
+            <svg class="w-8 h-8 text-blush" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+            <span>DigiMarket</span>
+        </div>
+        <nav class="flex-1 p-4 space-y-2">
+            <a href="dashboard.html" class="block p-2 rounded hover:bg-taupe transition">Dashboard</a>
+            <a href="products.html" class="block p-2 rounded hover:bg-taupe transition">Products</a>
+            <a href="#" class="block p-2 rounded hover:bg-taupe transition">Users</a>
+            <a href="#" class="block p-2 rounded hover:bg-taupe transition">Setting</a>
+        </nav>
+        <div class="p-4 border-t border-taupe">
+            <a href="index.html" class="block p-2 text-center bg-deeppink rounded hover:bg-blush hover:text-evergreen font-bold transition">Logout</a>
+        </div>
+    </aside>
+    
+    <!-- Main Wrapper -->
+    <div class="flex-1 flex flex-col">
+        <!-- Header -->
+        <header class="bg-white shadow p-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-evergreen">Starter Template</h1>
+            <span class="text-taupe font-semibold">Welcome, Admin</span>
+        </header>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-6 overflow-y-auto bg-gray-50">
+            <h2 class="text-2xl font-bold text-evergreen mb-4">Judul Halaman</h2>
+            <div class="bg-white p-6 rounded shadow border-l-4 border-deeppink">
+                <p class="text-taupe">Ini adalah paragraf sampel untuk konten utama pada starter template. Template ini bisa digunakan kembali untuk halaman lain.</p>
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer class="bg-white p-4 text-center text-sm text-taupe border-t shadow-inner">
+            &copy; 2026 DigiMarket Admin Panel.
+        </footer>
+    </div>
+</body>
+</html>
